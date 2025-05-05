@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.game-container {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    background-color: #87CEEB;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.score-board {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.game-area {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#road {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    background-image: url('assets/road.png');
+    background-repeat: repeat-y;
+    background-size: 100% 100px;
+}
+
+#bus {
+    position: absolute;
+    width: 120px;
+    height: 220px;
+    bottom: 50px;
+    left: 350px;
+    background-image: url('assets/bus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    transition: left 0.2s ease;
+}
+
+#obstacles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.obstacle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.control-btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.control-btn:hover {
+    background-color: #45a049;
+}
+
+.control-btn:active {
+    background-color: #3e8e41;
+}

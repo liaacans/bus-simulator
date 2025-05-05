@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board">
+            <span>Score: <span id="score">0</span></span>
+            <span>Speed: <span id="speed">0</span> km/h</span>
+        </div>
+        
+        <div class="game-area">
+            <div id="road"></div>
+            <div id="bus"></div>
+            <div id="obstacles"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="left-btn" class="control-btn">←</button>
+            <button id="accelerate-btn" class="control-btn">Accelerate</button>
+            <button id="right-btn" class="control-btn">→</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
